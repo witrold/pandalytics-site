@@ -12,11 +12,11 @@
 - Données locales du client League of Legends sur l'ordinateur de l'utilisateur (compte connecté, phase de jeu, sélection de champion, données de la partie en cours), lues uniquement sur la machine et jamais envoyées ailleurs.
 - Réglages de l'application (taille de l'interface, recherches récentes et favoris, dernier profil consulté), stockés dans le dossier `%APPDATA%\com.theo.lolcompanion\`.
 
-**Stockage.** Une base SQLite locale (`pandalytics.db`) contient les parties classées publiques renvoyées par l'API Riot (données de match), utilisées pour calculer des statistiques agrégées. Ces données sont collectées par un serveur géré par l'auteur de l'application, puis copiées sur le PC à la demande de l'utilisateur. Durée de conservation : [à décider, par exemple 1 an, puis suppression]. Sauvegardes : [à préciser].
+**Stockage.** Une base SQLite sur le serveur de l'auteur contient les parties classées publiques renvoyées par l'API Riot (données de match), utilisées pour calculer des statistiques agrégées. Ces données sont collectées et stockées sur un serveur géré par l'auteur de l'application ; elles ne sont pas copiées sur le PC de l'utilisateur, qui ne reçoit que des statistiques calculées. Durée de conservation : 1 an, puis suppression. Sauvegardes : [à préciser].
 
 **Ce que l'application ne fait pas.** Pas de compte utilisateur, pas de publicité, pas de suivi de l'usage, pas de revente de données, pas de collecte de données personnelles sur les utilisateurs de l'application. Aucun envoi de données du client League of Legends vers un serveur.
 
-**Connexions réseau.** API de Riot Games (avec la clé de l'application, qui reste en local dans `config.json` et n'est jamais affichée ni journalisée), Data Dragon (icônes et noms), et, si l'utilisateur lance la synchronisation, le serveur de collecte de l'auteur (connexion chiffrée, l'application y télécharge une copie de la base et n'y envoie aucune donnée de joueur).
+**Connexions réseau.** Le serveur de l'auteur (connexion chiffrée, authentifiée par un jeton personnel). L'application lui envoie le Riot ID recherché ou le Riot ID du joueur connecté pour afficher un profil, la partie en cours ou des statistiques ; le serveur interroge l'API de Riot Games avec sa propre clé, qui n'est jamais dans l'application ni affichée ni journalisée. Le serveur ne conserve pas ces requêtes au-delà des journaux techniques [durée à préciser]. L'application contacte aussi Data Dragon (icônes et noms).
 
 **Journal.** L'application écrit un journal technique local (`pandalytics.log`, erreurs et messages techniques, sans clé). Il n'est jamais envoyé.
 
@@ -31,11 +31,11 @@
 - Local League client data on the user's own computer (signed-in account, game phase, champion select, live game data), read on the machine only and never sent elsewhere.
 - App settings (interface size, recent searches and favorites, last viewed profile), stored in `%APPDATA%\com.theo.lolcompanion\`.
 
-**Storage.** A local SQLite database (`pandalytics.db`) holds public ranked matches returned by the Riot API (match data), used to compute aggregated statistics. This data is collected by a server run by the app's author, then copied to the PC when the user starts a sync. Retention period: [to be decided, e.g. 1 year, then deletion]. Backups: [to be specified].
+**Storage.** A SQLite database on the author's server holds public ranked matches returned by the Riot API (match data), used to compute aggregated statistics. This data is collected and stored on a server run by the app's author; it is not copied to the user's PC, which only receives computed statistics. Retention period: 1 year, then deletion. Backups: [to be specified].
 
 **What the app does not do.** No user accounts, no advertising, no usage tracking, no resale of data, no collection of personal data about the app's users. No League client data is sent to any server.
 
-**Network connections.** Riot Games API (with the application's key, which stays local in `config.json` and is never displayed or logged), Data Dragon (icons and names), and, when the user starts a sync, the collection server run by the author (encrypted connection; the app downloads a copy of the database and sends no player data to it).
+**Network connections.** The author's server (encrypted connection, authenticated with a personal token). The app sends it the Riot ID being looked up, or the connected player's Riot ID, to show a profile, the current game or statistics; the server queries the Riot Games API with its own key, which is never in the app and never displayed or logged. The server does not keep these requests beyond technical logs [retention to be specified]. The app also contacts Data Dragon (icons and names).
 
 **Log.** The app writes a local technical log (`pandalytics.log`, errors and technical messages, no keys). It is never uploaded.
 

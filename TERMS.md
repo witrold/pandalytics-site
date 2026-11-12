@@ -19,7 +19,7 @@
 
 **5. Données.** Les données de jeu proviennent de l'API de Riot Games et des données publiques de parties. Pandalytics ne collecte aucune donnée personnelle sur ses utilisateurs. Voir la [politique de confidentialité](PRIVACY.md).
 
-**6. Clé et synchronisation.** La clé d'accès à l'API Riot est gérée par l'auteur de l'application et n'est jamais diffusée. Si l'application vous donne accès à un service de synchronisation, ce service peut être limité, suspendu ou arrêté à tout moment.
+**6. Clé et service en ligne.** La clé d'accès à l'API Riot est gérée par l'auteur de l'application sur son serveur et n'est jamais diffusée. L'accès au service se fait par un jeton personnel ; le service peut être limité, suspendu, le jeton révoqué ou le service arrêté à tout moment.
 
 **7. Disponibilité.** L'application est fournie « en l'état ». Elle peut contenir des erreurs ou être indisponible. L'auteur peut la modifier, la suspendre ou la retirer à tout moment.
 
@@ -47,7 +47,7 @@
 
 **5. Data.** Game data comes from the Riot Games API and public match data. Pandalytics does not collect personal data about its users. See the [privacy policy](PRIVACY.md).
 
-**6. Key and synchronization.** The Riot API key is managed by the app's author and is never distributed. If the app gives you access to a synchronization service, that service may be limited, suspended or stopped at any time.
+**6. Key and online service.** The Riot API key is managed by the app's author on their server and is never distributed. Access to the service uses a personal token; the service may be limited or suspended, the token revoked, or the service stopped at any time.
 
 **7. Availability.** The app is provided "as is". It may contain errors or be unavailable. The author may change, suspend or withdraw it at any time.
 
