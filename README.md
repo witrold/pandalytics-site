@@ -4,7 +4,7 @@ Page publique de **Pandalytics**, un assistant de bureau Windows pour League of 
 
 - Projet personnel, gratuit et non commercial.
 - Site : https://witrold.github.io/pandalytics-site/
-- Téléchargement : [dernière version (v0.1.0)](https://github.com/witrold/pandalytics-site/releases/latest)
+- Téléchargement : [dernière version (v0.1.1)](https://github.com/witrold/pandalytics-site/releases/latest)
 
 ## Contenu de ce dépôt
 
