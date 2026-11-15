@@ -16,7 +16,7 @@
 
 **Ce que l'application ne fait pas.** Pas de compte utilisateur, pas de publicité, pas de suivi de l'usage, pas de revente de données, pas de collecte de données personnelles sur les utilisateurs de l'application. Aucun envoi de données du client League of Legends vers un serveur.
 
-**Connexions réseau.** Le serveur de l'auteur (connexion chiffrée, authentifiée par un jeton personnel). L'application lui envoie le Riot ID recherché ou le Riot ID du joueur connecté pour afficher un profil, la partie en cours ou des statistiques ; le serveur interroge l'API de Riot Games avec sa propre clé, qui n'est jamais dans l'application ni affichée ni journalisée. Le serveur ne conserve pas ces requêtes au-delà des journaux techniques [durée à préciser]. L'application contacte aussi Data Dragon (icônes et noms).
+**Connexions réseau.** Le serveur de l'auteur (connexion chiffrée, sans compte ni jeton ; les requêtes sont limitées par adresse IP). L'application lui envoie le Riot ID recherché ou le Riot ID du joueur connecté pour afficher un profil, la partie en cours ou des statistiques ; le serveur interroge l'API de Riot Games avec sa propre clé, qui n'est jamais dans l'application ni affichée ni journalisée. Le serveur ne conserve pas ces requêtes au-delà des journaux techniques [durée à préciser]. L'application contacte aussi Data Dragon (icônes et noms).
 
 **Journal.** L'application écrit un journal technique local (`pandalytics.log`, erreurs et messages techniques, sans clé). Il n'est jamais envoyé.
 
@@ -35,7 +35,7 @@
 
 **What the app does not do.** No user accounts, no advertising, no usage tracking, no resale of data, no collection of personal data about the app's users. No League client data is sent to any server.
 
-**Network connections.** The author's server (encrypted connection, authenticated with a personal token). The app sends it the Riot ID being looked up, or the connected player's Riot ID, to show a profile, the current game or statistics; the server queries the Riot Games API with its own key, which is never in the app and never displayed or logged. The server does not keep these requests beyond technical logs [retention to be specified]. The app also contacts Data Dragon (icons and names).
+**Network connections.** The author's server (encrypted connection, no account or token; requests are rate-limited per IP address). The app sends it the Riot ID being looked up, or the connected player's Riot ID, to show a profile, the current game or statistics; the server queries the Riot Games API with its own key, which is never in the app and never displayed or logged. The server does not keep these requests beyond technical logs [retention to be specified]. The app also contacts Data Dragon (icons and names).
 
 **Log.** The app writes a local technical log (`pandalytics.log`, errors and technical messages, no keys). It is never uploaded.
 
