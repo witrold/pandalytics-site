@@ -4,9 +4,9 @@
 
 **Votre compagnon de bureau pour League of Legends sur Windows**
 
-Profils joueurs, statistiques de champions, tierlist, aide à la draft et tableau de la partie en cours.
+Profils joueurs, statistiques de champions, tierlist par patch, aide à la draft et tableau de la partie en cours.
 
-[**Télécharger la dernière version**](https://github.com/witrold/pandalytics-site/releases/latest) · [Site](https://witrold.github.io/pandalytics-site/) · [Confidentialité](PRIVACY.md) · [Conditions](TERMS.md)
+[**Télécharger la dernière version**](https://github.com/witrold/pandalytics-site/releases/latest) · [Site](https://pandalytics.witbot.fr/) · [Confidentialité](PRIVACY.md) · [Conditions](TERMS.md)
 
 </div>
 
@@ -19,9 +19,10 @@ Profils joueurs, statistiques de champions, tierlist, aide à la draft et tablea
 | **Recherche de joueur** | Tapez `Nom#TAG` : rang, dernières parties, performances par champion, joueurs joués avec. |
 | **Statistiques** | KDA, dégâts, vision, CS/min, winrate et série en cours, avec l'écart à votre moyenne. |
 | **Variation de LP** | Les LP gagnés ou perdus sur chaque partie, quand le rang est suivi. |
-| **Fiche champion** | Winrate, builds, runes, objets, counters et matchups. |
-| **Tierlist** | Classement des champions par rôle. |
-| **Draft** | Import en un clic des runes, sorts et objets recommandés dans le client. |
+| **Fiche champion** | Winrate, runes, sorts, objets (bottes, principaux, finis, situationnels avec le % d'achat), counters et matchups. Au choix : les plus joués ou le meilleur winrate. |
+| **Tierlist** | Classement des champions par rôle (tiers S à D, taux de pick et de ban, tendance, meilleur counter), avec une option « Hors méta ». |
+| **Choix du patch** | Tierlist, fiche champion et draft : le dernier patch par défaut, les 6 derniers ou tous. |
+| **Draft** | Import en un clic des runes, sorts et d'un set d'objets recommandés dans le client. |
 | **Partie en cours** | Tableau des 10 joueurs (**Alt+X**) par-dessus le jeu. |
 | **Comparer** | Deux joueurs côte à côte. |
 
@@ -30,6 +31,8 @@ Profils joueurs, statistiques de champions, tierlist, aide à la draft et tablea
 1. Téléchargez `pandalytics_<version>_x64-setup.exe` depuis la [dernière version](https://github.com/witrold/pandalytics-site/releases/latest).
 2. Lancez l'installeur. Windows peut afficher « Windows a protégé votre PC » : cliquez sur **Informations complémentaires**, puis **Exécuter quand même**. L'installeur n'est pas signé.
 3. Ouvrez Pandalytics. Aucune configuration n'est nécessaire.
+
+**Mises à jour :** au démarrage, l'application vérifie s'il existe une version plus récente (signée par l'auteur) et s'installe seule. Elle ne le fait pas pendant une partie. Vous pouvez désactiver cette option dans Outils.
 
 **Configuration requise :** Windows 10 ou 11 (64 bits) et le client League of Legends.
 
