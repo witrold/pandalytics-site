@@ -6,7 +6,7 @@
 
 Profils joueurs, statistiques de champions, tierlist par patch, aide à la draft et tableau de la partie en cours.
 
-[**Télécharger la dernière version**](https://github.com/witrold/pandalytics-site/releases/latest) · [Site](https://pandalytics.witbot.fr/) · [Confidentialité](PRIVACY.md) · [Conditions](TERMS.md)
+[**Télécharger la dernière version**](https://github.com/witrold/pandalytics-site/releases/latest) · [Site](https://pandalytics.witrold.fr/) · [Confidentialité](PRIVACY.md) · [Conditions](TERMS.md)
 
 </div>
 
